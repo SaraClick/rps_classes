@@ -23,10 +23,10 @@ class Scores:
                             top_three[3] = top_three[2]  # replace 3rd on board with current 2nd
                             top_three[2] = top_three[1]  # replace 2nd on board with current 1st
                             top_three[1] = [player_name, game_score]  # set new 1st
-                        elif top_three[2][1] < game_score <= top_three[1][1]:  # if the above is not true, check if score > 2nd
+                        elif top_three[2][1] < game_score <= top_three[1][1]:  # check if score > 2nd
                             top_three[3] = top_three[2]  # replace 3rd on board with current 2nd
                             top_three[2] = [player_name, game_score]  # set new 2nd
-                        elif top_three[3][1] < game_score <= top_three[2][1]:  # if score is not > than 1st and 2nd, check if > 3rd
+                        elif top_three[3][1] < game_score <= top_three[2][1]:  # if score not > 1st&2nd,check if > 3rd
                             top_three[3] = [player_name, game_score]  # set new 3rd
                     elif len(top_three) == 2:
                         if top_three[1][1] < game_score:  # if score is greater than 1st
@@ -45,7 +45,6 @@ class Scores:
                             top_three[2] = top_three[1]
                             top_three[1] = [player_name, game_score]
 
-
     def get_game_played(self):
         return self.score_board.keys()
 
@@ -54,13 +53,3 @@ class Scores:
             print(f">>>>   Game: {game}    <<<<")
             for name, score in board.items():
                 print(f"{name} ==> {score}")
-
-
-
-
-
-
-
-
-
-

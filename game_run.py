@@ -25,5 +25,3 @@ def rps_run(user_name, wanna_play=True, first_time=True):
 
 if __name__ == "__main__":
     rps_run(name)
-
-
