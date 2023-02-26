@@ -10,6 +10,9 @@ class RPS:
         self.user = user
         self.user_move = None
         self.python_move = None
+    
+    def get_game_name(self):
+        return "Rock, Paper, Scissor"
 
     def _move_converter(self, move):
         for move_name, values in self.converter_dict.items():
