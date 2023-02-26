@@ -10,7 +10,7 @@ class RPS:
         self.user = user
         self.user_move = None
         self.python_move = None
-    
+
     def get_game_name(self):
         return "Rock, Paper, Scissor"
 
